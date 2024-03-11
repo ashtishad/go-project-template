@@ -3,8 +3,6 @@ package transport
 import (
 	"encoding/json"
 	"net/http"
-
-	"github.com/ashtishad/go-project-template/internal/common"
 )
 
 // writeResponse helper function for writing JSON responses to the http.ResponseWriter
@@ -15,6 +13,6 @@ func writeResponse(w http.ResponseWriter, code int, data interface{}) {
 	w.WriteHeader(code)
 
 	if err := json.NewEncoder(w).Encode(data); err != nil {
-		http.Error(w, common.NewInternalServerError("binding error message failed", err).Error(), http.StatusInternalServerError)
+		http.Error(w, "binding error message failed", http.StatusInternalServerError)
 	}
 }
