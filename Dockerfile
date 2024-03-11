@@ -8,9 +8,9 @@ WORKDIR /app
 # Copy go.mod and go.sum files if your project requires third party libraries.
 # Taking advantage of Docker's cache layers, only re-download dependencies if these files change.
 
-#COPY go.mod go.sum ./
-#RUN go mod download
-#RUN go mod tidy
+COPY go.mod go.sum ./
+RUN go mod download
+RUN go mod tidy
 
 # Copy the source code into the container.
 COPY . .
