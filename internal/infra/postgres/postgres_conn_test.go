@@ -15,7 +15,7 @@ func TestGetDsnURL(t *testing.T) {
 		dbPasswd = "password"
 		dbHost   = "host"
 		dbPort   = "5432"
-		dbName   = "dbname"
+		dbName   = "datalake"
 	)
 
 	_ = os.Setenv("DB_USER", dbUser)

@@ -10,11 +10,11 @@ $do$
     END
 $do$;
 
--- Create database named 'dbname'
-CREATE DATABASE dbname;
+-- Create database named 'datalake'
+CREATE DATABASE datalake;
 
 -- Connect to the new database and enable UUID extension.
-\c dbname
+\c datalake
 
 -- Create the UUID extension.
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";

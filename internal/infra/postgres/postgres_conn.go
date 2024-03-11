@@ -16,7 +16,7 @@ import (
 // It sets the connection parameters such as user, password, host, port, database name, timezone, and SSL mode.
 // The resulting DSN URL is in the format:
 // "postgres://user:password@host:port/dbname?sslmode=disable&timezone=UTC"
-// postgres://postgres:postgres@127.0.0.1:5432/gopark?sslmode=disable&timezone=UTC
+// postgres://postgres:postgres@127.0.0.1:5432/datalake?sslmode=disable&timezone=UTC
 func GetDsnURL() *url.URL {
 	dsn := url.URL{
 		Scheme: "postgres",

@@ -33,7 +33,7 @@ func sanityCheck(l *slog.Logger) {
 		"DB_PASSWD": "strong_password",
 		"DB_HOST":   "127.0.0.1",
 		"DB_PORT":   "5432",
-		"DB_NAME":   "dbname",
+		"DB_NAME":   "datalake",
 	}
 
 	for key, defaultValue := range defaultEnvVars {
